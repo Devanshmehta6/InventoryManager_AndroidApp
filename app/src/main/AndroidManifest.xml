@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mad_mp">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/main_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/main_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MAD_MP">
+        <activity
+            android:name=".edit_product"
+            android:exported="false" />
+        <activity
+            android:name=".ViewData"
+            android:exported="true" />
+        <activity
+            android:name=".delete_product"
+            android:exported="true" />
+        <activity
+            android:name=".AddProduct"
+            android:exported="true"></activity>
+        <activity
+            android:name=".Dashboard"
+            android:exported="true"></activity>
+        <activity
+            android:name=".Activity2"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit Product"
+        android:textSize="40dp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="70dp"
+        android:id="@+id/editprodtext"
+        android:textColor="@color/black"
+        >
+    </TextView>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editprodtext"
+        android:layout_marginTop="140dp"
+        android:layout_centerInParent="true"
+        app:boxBackgroundColor="#B3D4EF"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/ed1"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"
+            android:textColor="@color/black"
+            android:hint="Enter product name you want to edit"
+            android:inputType="textEmailAddress">
+
+        </EditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ed1"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#2935B3"
+            android:text="Search Details"
+            android:id="@+id/submit"
+            app:cornerRadius="12dp">
+
+        </Button>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv1"
+        android:text="Quantity: "
+        android:textColor="@color/black"
+        android:layout_below="@+id/submit"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="16dp"
+        >
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/quantity"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/tv1"
+        android:layout_below="@+id/submit"
+        android:layout_marginTop="20dp"
+        >
+    </TextView>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv1"
+            android:layout_marginTop="20dp"
+            android:layout_centerInParent="true"
+            app:boxBackgroundColor="#B3D4EF"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/ed2"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/new_quantity"
+                android:textColor="@color/black"
+                android:hint="Enter new quantity"
+                android:inputType="textEmailAddress">
+
+            </EditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ed2"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#2935B3"
+        android:text="Update Details"
+        android:id="@+id/update"
+        app:cornerRadius="12dp">
+
+    </Button>
+    </RelativeLayout>
+</ScrollView>

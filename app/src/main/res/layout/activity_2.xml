@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".MainActivity"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="252dp"
+        android:layout_height="218dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        app:srcCompat="@drawable/main_logo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="202dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-88dp"
+
+
+        android:textColor="#C1F8B0B0"
+        android:textSize="53dp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="100dp"
+        android:layout_centerInParent="true"
+        app:boxBackgroundColor="#84C2F4"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/ed1"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        >
+        <EditText
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/username"
+            android:hint="Enter username"
+            android:inputType="textEmailAddress">
+
+        </EditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ed1"
+
+
+        app:boxBackgroundColor="#84C2F4"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/ed2"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:id="@+id/password"
+            android:hint="Password"
+            android:inputType="textPassword">
+
+        </EditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ed2"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="-94dp"
+        android:backgroundTint="#F57F17"
+        android:text="Login"
+        android:textColor="#FFFF"
+        android:textSize="20dp" />
+
+
+    <ProgressBar
+        android:id="@+id/progressbars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+
+</RelativeLayout>
